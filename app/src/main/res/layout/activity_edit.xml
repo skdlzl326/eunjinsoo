@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="제목을 입력하세요"
+        android:id="@+id/sedit" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="장소를 입력하세요"
+        android:id="@+id/locationedit" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:text="SetDate"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/datebtn" />
+
+        <Button
+            android:text="Set Start Time"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startbtn" />
+
+        <Button
+            android:text="Set End Time"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/endbtn"
+            android:layout_toRightOf="@id/startbtn"
+            />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datetext" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Memo"
+        android:id="@+id/memoedit"
+       />
+
+
+    <CheckBox
+        android:text="알림 기능"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:text="save"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/savebtn" />
+       <!-- <Button
+            android:text="delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deletebtn" />-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resulttext" />
+</LinearLayout>
